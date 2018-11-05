@@ -1,0 +1,11 @@
+
+
+.hideMe {
+visibility: hidden;
+height: auto;
+border: 1px solid black;
+}
+.showMe{
+visibility: visible;
+
+}
