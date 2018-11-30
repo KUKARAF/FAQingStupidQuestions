@@ -1,579 +1,782 @@
-<meta charset="UTF-8">
 
-<p>What do you need help with?</p>
+
+
+
+
+ <meta charset="UTF-8">
+
 <input type="text" id="comboBox" placeholder="Ex wagering"/>
-<a id=showInstead><a>
 
+<div id = outPut>
+<b><a id = tit> </a></b>
+<a id = bodey></a>
+</div>
 
-<div class="col-12"  id="comboBoxData">
-                        <!-- ko foreach: faqCategories -->
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Top 5 Fragen</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-zahle-ich-geld-auf-casumo-ein"><h3><strong data-bind="html: question">Wie zahle ich Geld auf Casumo ein?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Klicke einfach auf deinen Kontostand oben links im Menü, wähle deine Einzahlungsmethode und folgende den Schritten. Bei Casumo kannst du mit Visa, Mastercard, Moneybookers/Skrill, Neteller, Paysafe oder Instant Bank (Sofortüberweisung) einzahlen.  Nutze ausschließlich Einzahlungsmethoden, welche dir persönlich gehören.</p></li>
 
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-habe-von-meinem-casumo-konto-ausgezahlt-wann-erhalte-ich-mein-geld"><h3><strong data-bind="html: question">Ich habe von meinem Casumo Konto ausgezahlt. Wann erhalte ich mein Geld?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Casumo überprüft alle Auszahlungen innerhalb von 23 Stunden (wir sind aber meist um einiges schneller). Sobald unsere Zahlungsabteilung die Auszahlung bestätigt hat, dauert es in der Regel 1-5 Werktage bis das Geld auf deinem Bankkonto eingeht. Dies ist von deiner Bank abhängig (Spieler in Schweden und Finnland können eine direkte Auszahlung wählen). Andere Auszahlungsmethoden sind direkt nach der Bestätigung verfügbar.</p>
+<div id = comboBoxData>
+				<div class="et_pb_module et_pb_toggle  et_pb_accordion_item_0 et_pb_accordion_item et_pb_toggle_open">
 
-<p>Wenn du eine Auszahlung beantragst, wird der Betrag reserviert und steht deinem Casumo-Guthaben nicht zur Verfügung. Die folgende Übersicht zeigt, wie lange es dauert, bis das Geld auf deinem Bankkonto / e-Wallet nach der Bestätigung ist.</p>
 
-<table>
-<thead>
-<tr>
-<th id="methode" style="text-align:left;"> Methode </th>
-<th id="verfügbar" style="text-align:left;"> Verfügbar </th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align:left;"><p>CARD </p></td>
-<td style="text-align:left;"><p>1-5 Werktage nach Bestätigung </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Skrill </p></td>
-<td style="text-align:left;"><p>direkt nach Bestätigung </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Neteller </p></td>
-<td style="text-align:left;"><p>direkt nach Bestätigung </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Paysafe </p></td>
-<td style="text-align:left;"><p>direkt nach Bestätigung </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Alle Banken </p></td>
-<td style="text-align:left;"><p>1-5 Werktage nach Bestätigung </p></td>
-</tr>
-
-</tbody>
-</table></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-erhalte-ich-meinen-willkommensbonus"><h3><strong data-bind="html: question">Wie erhalte ich meinen Willkommensbonus?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Als Willkommensbonus erhältst du 20 Freispiele in Book of Dead nach Registrierung deines Kontos. Casumo verdoppelt außerdem deine erste Einzahlung in Höhe von bis zu 500€, zusätzlich erhältst du 100 weitere Freispiele in Book of Dead. Um den Wertgegenstand für den Einzahlungsbonus zu aktivieren, musst du diesen anklicken bevor du eine Einzahlung tätigst. Sobald du eingezahlt hast, taucht der Bonus automatisch in deinem Konto auf.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-aktiviere-ich-meine-freispiele"><h3><strong data-bind="html: question">Wie aktiviere ich meine Freispiele?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Um deine Freispiele zu aktivieren – gehe auf deine Profilseite und klicke auf den entsprechenden Wertgegenstand. Indem du den Wertgegenstand anklickst, werden die Freispiele aktiviert und das Spiel wird automatisch gestartet.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="das-erste-casino-abenteuer-der-welt-was-ist-das"><h3><strong data-bind="html: question">“Das erste Casino Abenteuer der Welt”. Was ist das?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Casumo ist mehr als nur ein online Casino. Hier erhältst du Wertgegenstände und Trophäen, indem du Punkte sammelst, die dich zu neuen Leveln und neuen Planeten bringen. Du wirst ständig fürs Spielen mit Freirunden oder gratis Cash belohnt! Desto mehr Zeit und Energie du in Casumo steckst, desto größer die Belohnungen!</p></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Mein Konto</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-erstelle-ich-ein-konto-mit-casumo"><h3><strong data-bind="html: question">Wie erstelle ich ein Konto mit Casumo?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Klicke auf “Registrieren” oben links in der Ecke und folge den Schritten. Du kannst alle Angaben nochmals prüfen, bevor du die Registrierung abschließt. Spielend einfach!</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-kann-kein-konto-eroffnen-was-lauft-falsch"><h3><strong data-bind="html: question">Ich kann kein Konto eröffnen. Was läuft falsch?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Vergewissere dich, dass alle Felder korrekt ausgefüllt sind. Hast du das Passwort in beiden Feldern eingegeben? Ist dein gewählter Benutzername bereits vergeben? Ist deine E-Mail Adresse bereits bei Casumo registriert, bedeutet dies, dass du bereits ein Konto bei uns hast. Klicke einfach auf “Ich habe mein Passwort vergessen” oder kontaktiere uns direkt, und wir werden dein Konto wieder freischalten.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-habe-mein-passwort-vergessen-wie-bekomme-ich-ein-neues"><h3><strong data-bind="html: question">Ich habe mein Passwort vergessen. Wie bekomme ich ein neues?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Klicke auf “Einloggen” oben links in der Ecke. Wähle dort “Ich habe mein Passwort vergessen” und gebe die E-Mail Adresse ein, mit der du dich bei Casumo registriert hast. Wir werden dir dann eine E-Mail mit einem Link senden. Solltest du die E-Mail nicht erhalten, überprüfe bitte deinen Spam Ordner.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wo-finde-ich-meine-personlichen-sachen"><h3><strong data-bind="html: question">Wo finde ich meine persönlichen Sachen?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Sobald du eingeloggt bist, klicke auf deinen Casumo Namen oben links in der Ecke und du kommst direkt zu deinen persönlichen Sachen. Hier findest du alles zu deinem Profil und deinem Casino Abenteuer – persönliche Informationen, Details &amp; Einstellungen, Status deines Abenteuers und alle deine Wertgegenstände und Trophäen.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="kann-ich-meinen-casumo-namen-andern"><h3><strong data-bind="html: question">Kann ich meinen Casumo Namen ändern?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Nein, du kannst deinen Casumo Namen nicht ändern, daher solltest du diesen mit extra Sorgfalt wählen und die Schreibweise kontrollieren. Möchtest du nicht, dass andere deinen Casumo Namen oder deine Aktivität einsehen könne, kannst du dich einfach unsichtbar machen. Schalte hierfür einfach “Mein Abenteuer und Spielerkarte anzeigen” unter “Details &amp; Einstellungen” auf “Aus”.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-kann-ich-die-details-in-meinem-konto-andern"><h3><strong data-bind="html: question">Wie kann ich die Details in meinem Konto ändern?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Klicke auf deinen Casumo Namen oben links und gehe auf “Details &amp; Einstellungen”. Hier kannst du deine E-Mail Adresse und dein Passwort ändern, indem du auf “Ändern” klickst. Musst du deine Adresse oder Telefonnumer ändern, kontaktiere uns einfach und wir werden dir weiter helfen.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-mochte-nicht-dass-andere-meinen-casumo-namen-oder-meine-aktivitat-sehen-was-mache-ich"><h3><strong data-bind="html: question">Ich möchte nicht, dass andere meinen Casumo Namen oder meine Aktivität sehen. Was mache ich?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Möchtest du nicht, dass andere deinen Casumo Namen oder deine Aktivität sehen können, mache dich einfach unsichtbar. Schalte hierfür einfach “Mein Abenteuer und Spielerkarte” unter “Details &amp; Einstellungen” auf “Aus”.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-bin-unter-18-jahre-alt-kann-ich-bei-casumo-spielen"><h3><strong data-bind="html: question">Ich bin unter 18 Jahre alt. Kann ich bei Casumo spielen?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Nein, kannst du nicht. Glücksspiel, unter dem Alter von 18 Jahren, ist eine Straftat und Casumo hat eine strenge Verantwortung allen Minderjährigen den Zugang zur Seite zu verwehren. Daher werden entsprechende Altersüberprüfungen durchgeführt.</p></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Einzahlungen</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-zahle-ich-geld-auf-casumo-ein"><h3><strong data-bind="html: question">Wie zahle ich Geld auf Casumo ein?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Klicke einfach auf deinen Kontostand oben links im Menü, wähle deine Einzahlungsmethode und folgende den Schritten. Bei Casumo kannst du mit Visa, Mastercard, Moneybookers/Skrill, Neteller, Paysafe oder Instant Bank (direkte Banküberweisung) einzahlen.  Nutze ausschließlich Einzahlungsmethoden, welche dir persönlich gehören.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="meine-einzahlung-ist-fehlgeschlagen-was-ist-falsch-gelaufen"><h3><strong data-bind="html: question">Meine Einzahlung ist fehlgeschlagen. Was ist falsch gelaufen?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Vergewissere dich, dass alle Informationen korrekt ausgefüllt sind. Sind alle Ziffern der Kontonummer korrekt? Befindest du dich momentan auf der Ein- oder Auszahlungsseite? Verwendest du eine von uns akzeptierte Karte (momentan akzeptieren wir keine Maestro Karten)? Sind alle Angaben korrekt – lade die Seite erneut oder verwende einen anderen Browser (wir empfehlen Google Chrome). Die Einzahlung kann ebenfalls von deiner Bank verweigert werden, eventuell wegen eines Einzahlungs- oder Transaktionslimit. Vielleicht hast du deinen Verified by VISA oder Mastercard Secure Code falsch eingegeben? Deine Karte könnte durch Einschränkungen in Bezug auf Online und / oder internationalen Zahlungsverkehr blockiert sein? Hat die Karte ausreichend Guthaben? Hast du mehr als 5 Kreditkarten gleichzeitig aktiviert? Bitte kontaktiere die Kartenabteilung deiner Bank für weitere Informationen und kontaktiere uns, sollte das Problem nach weiteren Versuchen bestehen.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-habe-eine-einzahlung-getatigt-aber-mein-geld-ist-nicht-auf-meinem-casumo-konto-verfugbar-was-tue-ich"><h3><strong data-bind="html: question">Ich habe eine Einzahlung getätigt, aber mein Geld ist nicht auf meinem Casumo Konto verfügbar. Was tue ich? </strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Kein Grund zur Panik. Vergewissere dich zuerst, dass das Geld von deinem Konto/ deiner Kreditkarte abgebucht wurde und dann kontaktiere uns. Wahrscheinlich werden wir das Geld ohne einen Einzahlungsnachweis finden. Es kann jedoch sein, dass wir dich in Ausnahmefällen nach einer Kopie der Überweisung fragen, damit wir die Zahlung bei dem entsprechenden Zahlungsanbieter finden können. </p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="gibt-es-eine-einzahlungsgebuhr-bei-casumo"><h3><strong data-bind="html: question">Gibt es eine Einzahlungsgebühr bei Casumo?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Alle Einzahlungsmethoden sind kostenfrei.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-habe-eine-einzahlung-auf-mein-casumo-konto-getatigt-wann-ist-das-geld-in-meinem-konto-verfugbar"><h3><strong data-bind="html: question"> Ich habe eine Einzahlung auf mein Casumo Konto getätigt. Wann ist das Geld in meinem Konto verfügbar?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Normalerweise ist das Geld innerhalb weniger Minuten in deinem Konto verfügbar, ausgeschlossen von einigen Banken, die die Zahlungen erst am Folgetag bearbeiten (Spieler in Schweden und Finnland können eine Banküberweisung tätigen, die direkt auf dem Konto gutgeschrieben wird. Weitere Informationen findest du im FAQ Bereich, in der jeweiligen Sprache).</p>
-
-<p>Die folgende Tabelle zeigt die verschiedenen Zahlungsmethoden an und wann das Geld in deinem Konto verfügbar ist.</p>
-
-<table>
-<thead>
-<tr>
-<th id="methode" style="text-align:left;">Methode</th>
-<th id="eingezahlt" style="text-align:left;">Eingezahlt</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align:left;"><p>VISA</p></td>
-<td style="text-align:left;"><p>direkt</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Mastercard</p></td>
-<td style="text-align:left;"><p>direkt</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Skrill</p></td>
-<td style="text-align:left;"><p>direkt</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Neteller</p></td>
-<td style="text-align:left;"><p>direkt</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Paysafe</p></td>
-<td style="text-align:left;"><p>direkt</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Sofort</p></td>
-<td style="text-align:left;"><p>direkt</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Giropay</p></td>
-<td style="text-align:left;"><p>direkt</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Paysafe</p></td>
-<td style="text-align:left;"><p>direkt</p></td>
-</tr>
-
-</tbody>
-</table></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Auszahlungen</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-zahle-ich-geld-von-casumo-aus"><h3><strong data-bind="html: question">Wie zahle ich Geld von Casumo aus?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Klicke auf deinen Kontostand oben links im Menü. Wähle deine bevorzugte Auszahlungsmethode und folge den angegebenen Schritten. Die Mindestauszahlungssumme beträgt €10.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="welche-auszahlungsmethoden-kann-ich-nutzen"><h3><strong data-bind="html: question">Welche Auszahlungsmethoden kann ich nutzen?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Auszahlungen sollten mit der gleichen Methode getätigt werden, die für die letzte Einzahlung verwendet wurde.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-kann-kein-geld-auszahlen-was-lauft-falsch"><h3><strong data-bind="html: question">Ich kann kein Geld auszahlen. Was läuft falsch?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Vergewissere dich, dass alle eingegebenen Daten korrekt sind. Übersteigt die auszuzahlende Summe deinen aktuellen Kontostand? Hast du die richtige Kontonummer eingegeben? Befindest du dich momentan auf der Ein- oder Auszahlungsseite? Hast du einen aktiven Bonus, der vor Auszahlung umgesetzt werden muss (du kannst weiterhin auszahlen, verlierst jedoch dein Bonusgeld)? Sind alle Informationen korrekt – versuche die Seite neu zuladen oder nutze einen anderen Browser (wir empfehlen Google Chrome). Solltest du weiterhin Schwierigkeiten haben, kontaktiere uns einfach.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="gibt-es-eine-auszahlungsgebuhr-bei-casumo"><h3><strong data-bind="html: question">Gibt es eine Auszahlungsgebühr bei Casumo?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Nein, Auszahlungen sind kostenlos bei Casumo.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-habe-eine-auszahlung-von-casumo-getatigt-wann-erhalte-ich-mein-geld"><h3><strong data-bind="html: question">Ich habe eine Auszahlung von Casumo getätigt. Wann erhalte ich mein Geld?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Beantragst du eine Auszahlung, wird der auszuzahlende Betrag reserviert und ist nicht mehr in deinem Casumo Konto verfügbar. Die folgende Tabelle zeigt an, wie lange es dauert bis die Auszahlung nach Bestätigung auf deinem Bank/E-Wallet Konto eingeht.</p>
-
-<table>
-<thead>
-<tr>
-<th id="methode" style="text-align:left;">Methode</th>
-<th id="verfügbar" style="text-align:left;">Verfügbar</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align:left;"><p>Visa/Mastercard</p></td>
-<td style="text-align:left;"><p>1-5 Werktage nach Bestätigung</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Skrill</p></td>
-<td style="text-align:left;"><p>direkt nach Bestätigung</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Neteller</p></td>
-<td style="text-align:left;"><p>direkt nach Bestätigung</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Paysafe</p></td>
-<td style="text-align:left;"><p>direkt nach Bestätigung</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Alle Banken</p></td>
-<td style="text-align:left;"><p>1-5 Werktage nach Bestätigung</p></td>
-</tr>
-
-</tbody>
-</table></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Bonus &amp; Freispiele</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-ist-ein-bonus"><h3><strong data-bind="html: question">Was ist ein Bonus?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Ein Bonus kann als extra Geld bezeichnet werden, welches deinem Konto gutgeschrieben wird und damit die Chancen erhöht groß abzusahnen. Die Größe des Bonus variiert und bevor du eine Auszahlung tätigen kannst, muss der Bonus zunächst umgesetzt werden.</p>
-
-<p>Ein Bonus bei Casumo können Freispiele oder extra Guthaben sein.  Den extra Cash erhältst du entweder direkt oder nach einer getätigten Einzahlung. Die Art und Größe des Bonus variiert. Das Bonusguthaben muss umgesetzt werden, bevor du eine Auszahlung beantragen kannst . Wenn du zum Beispiel einen 50% Bonus erhältst, werden wir 50% Guthaben zu deinem Einzahlungsbetrag addieren. In diesem Fall erhältst du 50€ extra von uns, wenn du 100€ in dein Casumo Konto einzahlst.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wann-erhalte-ich-einen-bonus-bei-casumo"><h3><strong data-bind="html: question">Wann erhalte ich einen Bonus bei Casumo?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Bei Casumo erhältst du Boni auf verschiedene Weise. Neben dem Ersteinzahlungsbonus und verschiedenen Aktionsboni, kannst du dir zahlreiche Boni sichern, abhängig davon wie weit du in deinem Casumo Abenteuer fortgeschritten bist. Manchmal erhältst du einen Bonus wenn du in ein neues Level aufsteigst, manchmal warten einfach nur Free Spins beim Einloggen auf dich. Verpasse keines der Angebote und Neuigkeiten, die wir per E-Mail verschicken. </p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-hoch-ist-der-willkommensbonus-bei-casumo"><h3><strong data-bind="html: question">Wie hoch ist der Willkommensbonus bei Casumo?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Als Willkommensbonus erhältst du 20 Freispiele in Book of Dead nach Registrierung deines Kontos. Casumo verdoppelt außerdem deine erste Einzahlung in Höhe von bis zu 500€, zusätzlich erhältst du 100 weitere Freispiele in Book of Dead. Um den Wertgegenstand für den Einzahlungsbonus zu aktivieren, musst du diesen anklicken bevor du eine Einzahlung tätigst. Sobald du eingezahlt hast, taucht der Bonus automatisch in deinem Konto auf.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-erhalte-ich-meinen-willkommensbonus"><h3><strong data-bind="html: question">Wie erhalte ich meinen Willkommensbonus?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Du findest den Willkommensbonus unter deinen Wertsachen in deinen persönlichen Dingen. Um dort hin zu gelangen, klicke oben links im Menü auf deinen Benutzernamen. Um den Wertgegenstand zu aktivieren, klicke diesen einfach an, damit du den Bonus und die Freispiele erhalten kannst. Du musst den Einzahlungsbonus vor deiner Einzahlung bestätigen. Sobald deine Einzahlung erfolgt ist, erscheint der Bonus automatisch in deinem Konto. Für deine nächste Einzahlung wirst du einen weiteren Wertgegenstand erhalten.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-sind-freispiele-oder-free-spins"><h3><strong data-bind="html: question">Was sind Freispiele oder Free Spins?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Free Spins (Freispiele oder Freirunden) bedeutet, dass du einige Runden kostenlos auf einem Spiel im Casino spielen kannst – natürlich mit den gleichen Gewinnchancen wie wenn du dein eigenes Geld einsetzt. Gewinne die durch Freispiele erzielt werden, werden in Bonusgeld verwandelt und müssen 30x eingesetzt werden, um den Bonus umzusetzen.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-aktiviere-ich-meine-freispiele"><h3><strong data-bind="html: question">Wie aktiviere ich meine Freispiele?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Um deine Free Spins zu aktivieren – gehe auf deine Profilseite und klicke auf den entsprechenden Wertgegenstand. Indem du den Wertgegenstand anklickst, werden die Freispiele aktiviert und das Spiel wird automatisch gestartet.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="mir-wurde-ein-wertgegenstand-versprochen-doch-ich-kann-diesen-nicht-in-meinem-konto-finden"><h3><strong data-bind="html: question">Mir wurde ein Wertgegenstand versprochen, doch ich kann diesen nicht in meinem Konto finden?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>In einigen Fällen musst du die Seite neu laden, damit deine Wertgegenstände angezeigt werden. Sollte dies nicht helfen, logge dich aus deinem Konto aus und logge dich danach wieder ein oder schließe den Browser und starte ihn neu. Du kannst ebenfalls versuchen direkt zum Spiel zu gehen, um dort deine Freispiele zu finden (zum Beispiel wenn du den Wertgegenstand angeklickt hast und dieser danach verschwunden ist ohne das Spiel zu starten). Besteht das Problem weiterhin, kontaktiere einfach unseren Kundendienst.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-habe-meine-freispiele-aktiviert-das-spiel-ist-nicht-gestartet-und-nun-ist-mein-wertgegenstand-verschwunden"><h3><strong data-bind="html: question">Ich habe meine Freispiele aktiviert, das Spiel ist nicht gestartet und nun ist mein Wertgegenstand verschwunden?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Sollte dies passieren, kannst du das Spiel manuell starten. Unter dem Hauptspiel solltest du dann die Anzahl der Freispiele sehen können. Solltest du keine Freispiele im Spiel sehen, lade die Seite erneut.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="welche-bonusanforderungen-hat-mein-bonus"><h3><strong data-bind="html: question">Welche Bonusanforderungen hat mein Bonus?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Bevor du dein Bonusgeld auszahlen kannst, muss dieses zunächst umgesetzt werden. Alle Boni müssen 30 Mal (Einzahlung + Bonus) und Freispiele 30 Mal umgesetzt werden. Du kannst eine Auszahlung tätigen, bevor du den Bonus umgesetzt hast, in diesem Fall verlierst du jedoch das Bonusgeld.  </p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="setzen-alle-spiele-meinen-bonus-um"><h3><strong data-bind="html: question">Setzen alle Spiele meinen Bonus um? </strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Die meisten Spiele zählen für die Umsetzung deines Bonus, aber nicht alle. Der Umsatz von Bonusguthaben in 1429 Uncharted Seas, Bloodsuckers, Dead or Alive, Jack Hammer 2, Super Monopoly Money, Pearls of India, Scrooge, Beautiful Bones, Tower Quest, Kings of Chicago und Simsalabim wird nicht zur Bonusumsetzung beitragen. Im Folgenden findest du eine Liste, wieviel jedes Spiel zur Umsetzung deines Bonus beiträgt:</p>
-
-<table>
-<thead>
-<tr>
-<th id="spiel" style="text-align:left;"> Spiel </th>
-<th id="umsetzung" style="text-align:left;"> Umsetzung </th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align:left;"><p>Spielautomaten</p></td>
-<td style="text-align:left;"><p>100%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Video Poker</p></td>
-<td style="text-align:left;"><p>30%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Casino Hold’em</p></td>
-<td style="text-align:left;"><p>10%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Oasis Poker</p></td>
-<td style="text-align:left;"><p>10%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>TXS Hold’em Poker</p></td>
-<td style="text-align:left;"><p>10%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Ultimate Texas Hold’em</p></td>
-<td style="text-align:left;"><p>0%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Roulette (alle Varianten)</p></td>
-<td style="text-align:left;"><p>0%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Baccarat (alle Varianten)</p></td>
-<td style="text-align:left;"><p>0%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Punto Banco</p></td>
-<td style="text-align:left;"><p>0%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Blackjack (inkl Pontoon und Double Exposure)</p></td>
-<td style="text-align:left;"><p>0%</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Alle anderen Spiele</p></td>
-<td style="text-align:left;"><p>100%</p></td>
-</tr>
-
-</tbody>
-</table></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-funktioniert-der-bonusumsatz-bei-casumo"><h3><strong data-bind="html: question">Wie funktioniert der Bonusumsatz bei Casumo?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Hast du Bonusgeld auf deinem Konto, wird dieses anteilig zu deinem Echtgeld eingesetzt. Hast du zum Beispiel €10 Bonusgeld und €10 Echtgeld in deinem Konto und setzt €2 ein, wird €1 des Bonusgeldes und €1 des Echtgeldes als Einsatz verwendet. Alle Gewinne werden anteilsmäßig gleich ausgezahlt. Hast du mehrere Boni gleichzeitig aktiviert, werden das Bonusgeld sowie die Umsatzanforderungen gebündelt.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wo-kann-ich-sehen-wie-viel-ich-noch-fur-meinen-bonus-umsetzen-muss"><h3><strong data-bind="html: question">Wo kann ich sehen, wie viel ich noch für meinen Bonus umsetzen muss?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Auf der Auszahlungsseite wirst du darüber informiert, ob und wieviel Bonusgeld du umsetzen musst und wirst ebenfalls darauf hingewiesen, dass dieses verschwindet sobald du eine Auszahlung tätigst. Bei uns erfährst du immer wieviel deines Guthabens Bonusgeld ist und wie viel du noch umsetzen musst, damit du dein Bonusgeld auszahlen kannst.</p></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Technische Fragen</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="spiele-laufen-langsam-was-kann-die-ursache-sein"><h3><strong data-bind="html: question">Spiele laufen langsam. Was kann die Ursache sein?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Vergewissere dich, dass du die neueste Version deines Browser verwendest (wir empfehlen Google Chrome) und die neueste Flash Version. Vergewissere dich ebenfalls, dass es nicht deine Internetverbindung ist, die das Problem hervorruft (spiele etwas mit dem Netzwerkkabel herum, sollte deine drahtlose Internetverbindung nicht so funktionieren wie sie sollte) und schließe alle Programme die im Hintergrund laufen.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-passiert-wenn-das-spiel-in-der-mitte-einer-spielrunde-stoppt"><h3><strong data-bind="html: question">Was passiert, wenn das Spiel in der Mitte einer Spielrunde stoppt?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Friert das Spiel ein oder stoppt es, startet dieses genau dort wo es zuvor beim Spiel stehen geblieben ist. Hast du nicht die Möglickeit das Spiel neu zu starten, wird die Spielrunde auf dem Server zu Ende gespielt, auch wenn dein Computer oder deine Internetverbindung aussetzen. Natürlich werden entsprechende Gewinne auf dein Casumo Konto ausgezahlt.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-kann-das-spiel-nicht-offnen-was-lauft-falsch"><h3><strong data-bind="html: question">Ich kann das Spiel nicht öffnen. Was läuft falsch?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Dies kann bedeuten, dass du eventuell die Verbindung zum Server verloren hast. Versuche dich aus- und wieder einzuloggen und das Spiel neu zu starten. Eventuell musst du ebenfalls den Browser neu starten und dich erneut einloggen. Sollten diese Versuche fehlschlagen, kontaktiere einfach unseren Kundendienst.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-mache-ich-einen-bildschirmausdruck-screenshot"><h3><strong data-bind="html: question">Wie mache ich einen Bildschirmausdruck (Screenshot)?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Ein Bildschirmausdruck oder auch Screenshot genannt, ist nichts anderes als eine Aufnahme von dem, was sich momentan auf deinem Bildschirm befindet (als würdest du ein Foto deines Computers machen mit einer Kamera). Das Bild wird als Datei auf deinem Computer gespeichert und kann einfach als Dateianhang einer E-Mail an uns beigefügt werden. So machst du einen Bildschirmausdruck mit Windows:</p>
-
-<p><strong>Schritt 1:</strong> Vergewissere dich, dass der Bildschirm genau das anzeigt, von dem du eine Aufnahme machen möchtest.</p>
-
-<p><strong>Schritt 2:</strong> Klicke auf “Print Screen” oder “Druck” auf deiner Tastatur (die Taste befindet sich normalerweise oben rechts auf der Tastatur).</p>
-
-<p><strong>Schritt 3:</strong> Öffne das Programm “Paint” oder “Word” auf deinem Computer und nutze dann die Tastenkombination Ctrl + V (oder Einfügen mit der rechten Maustaste). Ein Bild wird eingefügt (dies ist das Bild, dass der Computer gespeichert hat als du auf “Print Screen” oder “Druck” geklickt hast).</p>
-
-<p><strong>Schritt 4:</strong> Speichere die Datei auf deinem Computer. Wir empfehlen dir diese auf dem Desktop zu speichern, um diese einfacher zu finden.</p>
-
-<p><strong>Schritt 5:</strong> Füge die Datei als Dateianhang einer E-Mail bei und sende diese an uns</p>
-
-<p>Eine Anleitung für andere Betriebssysteme findest du hier:</p>
-
-<p>http://www.take-a-screenshot.org/de/</p></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Das Abenteuer</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="das-erste-casino-abenteuer-der-welt-was-ist-das"><h3><strong data-bind="html: question">“Das erste Casino Abenteuer der Welt”. Was ist das?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Casumo ist mehr als nur ein online Casino. Hier erhältst du Wertgegenstände und Trophäen, indem du Punkte sammelst und so in ein neues Level aufsteigst oder neue Planeten entdeckst. Du wirst ständig fürs Spielen mit Freirunden oder gratis Cash belohnt! Man könnte sagen, dass ein weiteres Spiel läuft während du gerade spielst, welches dich belohnt und für jede Menge Spaß sorgt. Desto mehr Zeit und Energie du in Casumo steckst, desto höher die Belohnungen!</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-funktioniert-der-fortschrittsbalken"><h3><strong data-bind="html: question">Wie funktioniert der Fortschrittsbalken?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Jedes Mal, wenn du bei Casumo spielst sammelst du gleichzeitig Punkte, die dich in ein neues Level deines Abenteuers bringen. Ein Balken zeigt dir deinen Fortschritt im jeweiligen Level an, und damit die Chance neue und bessere Wertgegenstände zu ergattern (wie Freispiele oder extra Cash).</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-passiert-wenn-ich-ein-neues-level-erreiche"><h3><strong data-bind="html: question">Was passiert, wenn ich ein neues Level erreiche?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Wenn du ein Konto bei Casumo erstellst, wird ein kleiner, niedlicher Casumo mit einem Gürtel um die Taille geboren. Der Gürtel symbolisiert den Anfänger Level – das Level in dem jeder neue Casumo sein Abenteuer beginnt. In jedem Level hast du die Möglichkeit Wertgegenstände, wie Freispiele oder extra Cash, zu gewinnen. Deine Chance bessere Wertgegenstände zu gewinnen, steigt in jedem neuen Level. Spielst du dich durch alle Level, öffnet sich am Ende schließlich ein komplett neuer Planet mit neuen spannenden Leveln.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-bin-soeben-in-ein-neues-level-aufgestiegen-habe-aber-keine-belohnung-erhalten-wieso-nicht"><h3><strong data-bind="html: question">Ich bin soeben in ein neues Level aufgestiegen, habe aber keine Belohnung erhalten. Wieso nicht?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Meistens erhältst du eine Belohnung wenn du in ein neues Level aufsteigst, aber nicht immer. Das Belohnungssystem hängt von verschiedenen Faktoren ab. Alle Punkte die du sammelst, werden gespeichert und in das nächste Level übertragen. Hast du dieses Mal keine Belohnung erhalten, steigen deine Chancen eine Belohnung im nächsten Level zu bekommen. </p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-sind-gurtel-und-wie-funktionieren-diese"><h3><strong data-bind="html: question">Was sind Gürtel und wie funktionieren diese?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Unsere Gürtel symbolisieren den Fähigkeitsgrad von dir und deinem Casumo. Desto besser dein Gürtel ist, desto höher stehen die Chancen aufregende Wertgegenstände im nächsten Level zu ergattern. Zunächst versuchst du den weißen Gürtel zu ergattern, danach gelb, rot, blau, lila und schwarz. Fast wie beim Karate!</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-sind-trophaen"><h3><strong data-bind="html: question">Was sind Trophäen?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Alle Casumos haben ihre eigene Abenteuer-Seite wo sie Wertgegenstände und Trophäen aufbewahren. Trophäen werden verdient, indem verschiedene Aufgaben bewältigt werden und sind ein Zeichen von harter Arbeit. Du kannst wählen ob du deine Trophäen gegenüber anderen Spielern zeigen möchtest oder ob du lieber anonym bleibst – dies hängt ganz davon ab wie wetteifernd und prahlerisch du bist.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-sind-wertgegenstande"><h3><strong data-bind="html: question">Was sind Wertgegenstände?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Ein Wertgegenstand ist eine Art Belohnung (wie Freispiele, Einzahlungsboni oder extra Cash), welche du unter den “Wertgegenständen” in deinem Konto findest. Navigiere die Maus über den jeweiligen Wertgegenstand und du erfährst was sich hinter diesem verbirgt. Um diesen zu nutzen, klicke einfach auf den entsprechenden Gegenstand. Sobald der Wertgegenstand aktiviert ist, verschwindet dieser von deinem Konto.</p></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Turniere</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-sind-reel-races-rennen"><h3><strong data-bind="html: question">Was sind Reel Races (Rennen)?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Die Reel Races (Rennen) können als schnelles "Casino-Turnier" beschrieben werden. Das Ziel ist, innerhalb einer bestimmten Zeit, so oft wie möglich zu gewinnen. Je mehr du gewinnst, umso mehr Punkte erhältst du. Der Spieler, der die meisten Punkte hat, wenn die Zeit abläuft, gewinnt.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ist-die-teilnahme-kostenlos"><h3><strong data-bind="html: question">Ist die Teilnahme kostenlos?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Ja, absolut. Du kannst zum Nulltarif teilnehmen.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-sammle-ich-punkte-in-reel-races"><h3><strong data-bind="html: question">Wie sammle ich Punkte in Reel Races?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Für einen normalen Gewinn erhältst du 2 Punkte, für einen großen Gewinn 20 Punkte. Um das Ganze aufregender zu machen, haben wir noch 3 zusätzliche Turnier-Booster dazugegeben: Für 3 Gewinne in Folge erhältst du 5 Punkte, für insgesamt 2 Große Gewinne 35 Punkte und für einen Mega Gewinn sogar 100 Punkte.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="an-wievielen-reel-races-kann-ich-pro-tag-teilnehmen"><h3><strong data-bind="html: question">An wievielen Reel Races kann ich pro Tag teilnehmen?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Du kannst an so vielen Reel Races teilnehmen, wie du möchtest.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-wird-die-position-ermittelt-wenn-mehrere-spieler-die-gleiche-punktzahl-erreicht-haben"><h3><strong data-bind="html: question">Wie wird die Position ermittelt, wenn mehrere Spieler die gleiche Punktzahl erreicht haben?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Der Spieler, der die Punktzahl zuerst erreicht hat, wird in der Rangliste die höhere Position erhalten.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="was-ist-ein-casumo-open-reel-race"><h3><strong data-bind="html: question">Was ist ein Casumo Open Reel Race?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Casumo Open Reel Races sind spezielle Reel Races ohne ein festgelegtes Spiel. Dadurch kannst du jedes Spiel wählen und damit in den Reel Races gegen andere Spieler antreten. Es gibt zahlreiche Casumo Open Reel Race Events am Tag.</p></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Lizenzen &amp; Sicherheit</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ist-mein-geld-sicher-bei-casumo"><h3><strong data-bind="html: question">Ist mein Geld sicher bei Casumo?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Die Glücksspielbehörde prüft und stellt sicher, dass wir die Guthaben der Spielerkonten decken können. Alle Verbindungen und Informationen werden über eine sichere Verbindung (SSL) gesendet. Dies bedeutet, dass die Informationen verschlüsselt sind und von niemand unberechtigtem gelesen werden können. Unsere Zahlungsmethoden sind PCI konform. Dies bedeutet, dass deine Kartendetails vertraut behandelt werden und das wir die höchsten Sicherheitsstandards für Zahlungen, Einzahlungen und Auszahlungen, verwenden.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wo-ist-casumo-reguliert"><h3><strong data-bind="html: question">Wo ist Casumo reguliert?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Zur Zeit haben wir Lizenzen in Malta und Großbritannien. Diese Lizenzen sind das Rückgrat unserer Unternehmungen und regulieren uns als Firma, um ein sicheres und geschütztes Spielumfeld bereitzustellen. Unsere Mission ist es, das du dich als Spieler darauf verlassen kannst, das unsere Seite allen Regeln und Gesetzen entspricht.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-kann-ich-sicher-sein-dass-die-spiele-fair-sind-und-zufallig-ablaufen"><h3><strong data-bind="html: question">Wie kann ich sicher sein, dass die Spiele fair sind und zufällig ablaufen?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Alle unsere Spiele nutzen einen Zufallsgenerator, der durch einen unabhängigen Drittanbieter zertifiziert ist. Der gleiche Zufallsgenerator wird für Echtgeld- und Spielgeldspiele verwendet.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="zahle-ich-steuern-auf-meine-gewinne-bei-casumo"><h3><strong data-bind="html: question">Zahle ich Steuern auf meine Gewinne bei Casumo?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Casumo verfügt über eine europäische Spiellizenz auf Malta, wo wir ebenfalls unseren Hauptsitz und Kundendienst haben. Da wir eine Spiellizenz in der EU haben, sind alle Gewinne steuerfrei, solange du aus und innerhalb der EU spielst. Dennoch bist du selber dafür verantwortlich zu wissen, ob du Steuern auf Gewinne bezahlen musst oder nicht.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="warum-kann-ich-nicht-auf-alle-spiele-zugreifen"><h3><strong data-bind="html: question">Warum kann ich nicht auf alle Spiele zugreifen?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Unsere verschiedenen Spiel-Anbieter operieren unter verschiedenen Gerichtsbarkeiten. Daher könnten einige Spiele in deinem Land gesperrt sein. Die nachfolgenden Beschränkungen sind derzeit aktiv:</p>
-
-<table>
-<thead>
-<tr>
-<th id="spielanbieter" style="text-align:left;"> Spielanbieter </th>
-<th id="länder" style="text-align:left;"> Länder </th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align:left;"><p>Play 'n Go </p></td>
-<td style="text-align:left;"><p>United States</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Microgaming </p></td>
-<td style="text-align:left;"><p>USA, France, Italy, Spain, Denmark, South Africa, Singapore</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Greentube </p></td>
-<td style="text-align:left;"><p>United States, Canada, France, Germany, Austria, Switzerland, Italy, Denmark, Hungary, Poland, Romania, Latvia, Turkey </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Evolution</p></td>
-<td style="text-align:left;"><p>Burma (Myanmar), China, Cuba, Cyprus, Iran, Israel, Latvia, Turkey, Russian Federation, Sudan, Syria, USA</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Thunderkick </p></td>
-<td style="text-align:left;"><p>United States, France, Iraq, Iran, Libya, Myanmar, Nigeria, North Korea, Spain, Sudan, Zimbabwe, Denmark, Portugal, Italy </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Quickspin </p></td>
-<td style="text-align:left;"><p>American Samoa, Cuba, Denmark, France, French Guyana, Hong Kong, India, Iraq, Iran, North Korea, South Korea, Libya, Myanmar, Macau, Northern Mariana Islands, Nigeria, French Polynesia, Sudan, French Southern Territories, United States, U.S. Virgin Islands, Zimbabwe </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Net Entertainment </p></td>
-<td style="text-align:left;"><p>North Korea, Iran, Algeria, Ecuador, Hong Kong, Indonesia, Myanmar, Afghanistan, Albania, Angola, Cambodia, Guyana, Iraq, Israel, Kuwait, Laos, Namibia, Nicaragua, Pakistan, Panama, Papua New Guinea, Philippines, Taiwan, Sudan, Syria, Uganda, Yemen, Zimbabwe, Belgium, Canada, Denmark, Italy, France, Spain, United States, Singapore </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Scientific Games (Bally, Barcrest, Williams, ShuffleMaster)</p></td>
-<td style="text-align:left;"><p>Afghanistan, Albania, Algeria, American Samoa, Andorra, Angola, Antigua &amp; Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Belarus, Belgium,Belize, Bolivia, Bosnia And Herzegovina, Botswana, Brazil, Bulgaria, Burundi, Cambodia, Canada, China, Chile, Christmas Island, Colombia, Comoros, Cook Islands, Costa Rica, Croatia, D.R. Congo, Cuba, Curaçao, Cyprus, Czech Republic, Denmark, Dominica, Dominican Republic, Ecuador, Egypt, El Salvador, Estonia, Ethiopia, Fiji, France, French Polynesia, French Southern Territories, Georgia, Germany, Ghana, Gibraltar, Greece, Grenada, Guam, Guatemala, Guernsey (Alderney), Republic of Guinea, Guinea-Bissau, Haiti, Hong Kong, Hungary, Iceland, India, Indonesia, Iran, Iraq, Isle Of Man, Italy, Israel, Jamaica, Japan, Jersey, Jordan, Kazakhstan, Kenya, Kuwait, Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Lithuania, Luxembourg, Macau, Macedonia, Malawi, Malaysia, Mali, Mauritius, Mexico, Moldova, Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nicaragua, Niger, Nigeria, Niue, Northern Mariana Islands, North Korea, Norway, Oman, Pakistan, Palestine, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Romania, Russia, Rwanda, Saint Kitts And Nevis, San Marino, Saudi Arabia, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Somalia, South Africa, Spain, South Korea, South Sudan, Sudan, Suriname, Swaziland, Switzerland, Syria, Taiwan, Tajikistan, Tanzania, Thailand, Timor-Leste, Trinidad &amp; Tobago, Tunisia, Turkey, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United States, United States Minor Outlying Islands, Uruguay, Uzbekistan, Venezuela, Vanuatu, Vietnam, British Virgin Islands, Virgin Islands, U.S.,Yemen, Zambia, Zimbabwe, Åland </p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>IGT</p></td>
-<td style="text-align:left;"><p>Argentina, Australia, Belgium, Canada, China, Cook Islands, Ivory Coast, Cuba, Northern Cyprus, Denmark, France, Miquelon, Greece, Germany, Hong Kong, Iran, Iraq, Israel, Italy, South Korea, North Korea, Laos, Libya, Macau, Mexico, Monaco, Myanmar, Nauru, Netherlands, Nigeria, Norway, Poland, Portugal, Romania, Russia, Singapore, Somalia, South Africa, Spain, Sudan, Syria, Taiwan, Thailand, Turkey, United States, Uzbekistan, Zimbabwe</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>NextGen &amp; Elk Studios</p></td>
-<td style="text-align:left;"><p>USA, Canada, Australia, Iran, North Korea, Cuba, Sudan, Syria</p></td>
-</tr>
-
-<tr>
-<td style="text-align:left;"><p>Merkur &amp; Blueprint</p></td>
-<td style="text-align:left;"><p>Afghanistan, Albania, Algeria, American Samoa, American Virginislands, Angola, Argentina, Armenia, Aruba, Australia, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Bolivia, Bonaire, Sint Eustatius and Saba, Brunei, Burundi, Côte d'Ivoire (Ivory Coast), Cambodia, Canada, Cayman Islands, China, Christmas Island, Cocos (Keeling) Island, Colombia, Congo, Congo (Republic of the), Cook Islands, Cuba, Curacao, Denmark, Dominika, Ecuador, Egypt, Eritrea, Ethiopia, Fiji, France, French Guyana, French Polynesia, French Southern Territories, Ghana, Grenada, Guadeloupe, Guam, Guatemala, Guinea, Haiti, Heard and McDonald Island, Holy See (Vatican City State), Honduras, Hong Kong, Indonesia, Iran, Iraq, Israel, Italy, Japan, Jemen, Jordan, Kenya, Korea North, Korea South, Kuwait, Kyrgyzstan, Laos, Lebanon, Liberia, Libya, Macao, Malawi, Marshall Islands, Martinique, Mayotte, Micronesia, Mongolia, Morocco, Mozambique, Myanmar, Northern Mariana Islands, Namibia, Nauru, Nepal, Netherlands Antilles, New Caledonia, Nicaragua, Niger, Nigeria, Niue, Norfolk Islands, Pakistan, Palestine, Papua-New Guinea, Paraguay, Philippines, Puerto Rico, Qatar, Réunion, Rwanda, São Tomé and Príncipe, South Sudan, Saint Martin, Saint-Pierre and Miquelon, Sambia, Saudi-Arabia, Sierra Leone, Sint Maarten, Somalia, Spain, Sri Lanka, St. Barthélemy, St. Kitts und Nevis, St. Vincent and the Grenadines, Sudan, Suriname, Syria, Taiwan, Tajikistan, Tanzania, Thailand, Timor-Leste, Trinidad and Tobago, Tunisia, Turkey, Turkmenistan, Uganda, United States Minor Outlying Islands, USA, Uzbekistan, Venezuela, Vietnam, Wallis and Futuna, Zimbabwe</p></td>
-</tr>
-
-</tbody>
-</table></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="warum-muss-ich-mein-konto-verifizieren"><h3><strong data-bind="html: question">Warum muss ich mein Konto verifizieren?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Alle Glücksspielanbieter, wie Casumo, müssen sich streng an Anti-Geldwäschebestimmungen der Behörden halten.
-Zusätzlich sind wir verpflichtet eine geschützte und sichere Glücksspielumgebung bereitzustellen, in der die Integrität der Spieler und die Sicherheit deines Guthabens oberste Priorität haben.
-Sicherheitsüberprüfungen, allgemein bekannt als KYC (Know Your Customer), müssen regelmäßig stattfinden
-und sind üblich, sobald eine Auszahlung beantragt wird. Sie können ebenso im Zusammenhang mit Einzahlungen oder als Zufallsüberprüfungen stattfinden.
-Du musst dein Konto nur einmal verifizieren. Wir behalten uns jedoch das Recht vor, je nach Kontoverlauf, zusätzliche Dokumente anzufordern.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-verifiziere-ich-mein-konto"><h3><strong data-bind="html: question">Wie verifiziere ich mein Konto?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Ganz einfach. Lade Dateien der angeforderten Dokumente hoch und lass uns den Rest machen.
-Der Kontoverifizierungsbereich wird in deinem Casumo-Konto sichtbar, sobald wir dir eine Anfrage zur Verifizierung zugesendet haben.
-Sobald deine Dokumente übermittelt wurden, werden sie auf Servern archiviert, die höchste Sicherheitsbestimmungen erfüllen.
-Die Art der Dokumente, die wir eventuell anfordern, hängt von deinen Ein- und Auszahlungsmethoden sowie einer gewissen Betragsgrenze ab.
-Wir geben dir Bescheid, sobald wir Dokumente von dir benötigen. Die Verifizierung ist normalerweise innerhalb weniger Stunden abgeschlossen.
-Damit wir deine Dokumente erfolgreich prüfen können, ist es wichtig, dass wir alle relevanten Details darauf erkennen können. Stelle daher bitte sicher, dass die Qualität deiner Uploads gut ist.
-Wir akzeptieren die meisten Dateiformate, die Dateien dürfen jedoch nicht größer als 8MB sein.
-Hier ist eine kurze Übersicht der gängisten Dokumente, die wir anfordern, sowie ein paar Tipps, die du beachten solltest.</p>
-
-<p><strong>Identitätsnachweis</strong> <br>
-Eine Kopie deines Reisepasses, Personalausweises oder Führerscheins, um dein Alter und deine Identität zu verifizieren.
-Andere Dinge, die du beachten solltest:</p>
-
+				<h2 class="et_pb_toggle_title">Top 5 questions</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul>
+<li>
+   <a class="question" href="/en/faq/#how-do-i-deposit-money-to-casumo"><strong>How do I deposit money to Casumo?</strong></a><p></p>
 <ul>
-<li>Das Ablaufdatum muss gültig sein.</li>
-<li>Muss ein persönliches Identifikationsdokument sein</li>
-<li>Das ganze Dokument muss sichtbar sein.</li>
-<li>Eine Kopie der Vorder- und Rückseite ist erforderlich.</li>
-<li>Muss ein behördlich ausgestelltes Dokument mit Foto sein.</li>
-<li>Verdecke oder verändere keine Details.</li>
+<li>Select the money icon on the main navigation, choose your desired deposit method and follow the instructions. At Casumo you can deposit using Visa, Mastercard, Skrill, Neteller, Paysafe or Bank transfer.</li>
 </ul>
-
-<p><strong>Adressnachweis</strong> <br>
-Normalerweise reicht eine Rechnung (auch online). Wir akzeptieren auch behördliche Dokumente oder Kontoauszüge zur Adressverifizierung.
-Das Dokument sollte in deinem Namen sein, mit der Adresse in deinem Casumo-Konto übereinstimmen und innerhald der letzten 6 Monate ausgestellt sein.
-Andere Dinge, die du beachten solltest:</p>
-
+</li>
+<li>
+   <a class="question" href="/en/faq/#i-have-forgot-my-password-how-do-i-get-a-new-one"><strong>I have made a withdrawal from Casumo. When will I receive my money?</strong></a><p></p>
 <ul>
-<li>Die gesamte Rechnung sollte sichtbar sein.</li>
-<li>Screenshots von Kontoauszügen/Online-Rechnungen müssen die URL (Internet-Adresse) beinhalten.</li>
-<li>Verdecke oder verändere keine Details.</li>
+<li>Casumo guarantee to review all withdrawals within 23 hours (usually we have your withdrawal processed much faster). When the people in our finance department have approved the withdrawal it takes up to three business days before the funds are available in your account for bank transfers (Sweden and Finland have instant bank transfers). The other withdrawal methods are available instant after approval.</li>
+<li>When you request a withdrawal the amount gets reserved and will not be available in your Casumo balance. The chart below shows how long it takes before the funds are available on your bank account/e-wallet after approval.</li>
+<li>
+<table>
+<thead>
+<tr>
+<th id="method" style="text-align: left;">Method</th>
+<th id="available" style="text-align: left;">Available</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CARD</td>
+<td style="text-align: left;">1-3 business days after approval</td>
+</tr>
+<tr>
+<td style="text-align: left;">Skrill</td>
+<td style="text-align: left;">instantly after approval</td>
+</tr>
+<tr>
+<td style="text-align: left;">Neteller</td>
+<td style="text-align: left;">instantly after approval</td>
+</tr>
+<tr>
+<td style="text-align: left;">All banks</td>
+<td style="text-align: left;">1-3 business days after approval</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ul>
-
-<p><strong>Nachweis der Einzahlung, VISA &amp; Mastercard</strong> <br>
-Dies ist erfoderlich, wenn wir die Auszahlung nicht direkt auf deine Karte ausführen können.
-Es könnten Beschränkungen in deinem Land auftreten oder der Kartentyp wird nicht unterstützt.
-Ein Kontoauszug, der mindestens eine Einzahlung auf dein Casumo-Konto mit der betreffenden Karte zeigt.
-Der Name des Empfängers und Kontoinhabers, sowie Kontodaten (IBAN &amp; SWIFT wenn möglich), um die Verbindung zwischen deiner Karte und dem Konto herzustellen.
-Dies ist wichtig, da die Herkunft und das Ziel des Guthabens möglichst das Gleiche sein sollten.
-Andere Dinge, die du beachten solltest:</p>
-
+</li>
+<li>
+   <a class="question" href="/en/faq/#what-welcome-bonus-do-i-get-at-casumo"><strong data-bind="html: question">What welcome bonus do I get at Casumo?</strong></a><p></p>
 <ul>
-<li>Screenshots von Kontoauszügen müssen die URL (Internet-Adresse) beinhalten</li>
-<li>Verdecke die Kartennummer, wenn sichtbar, auf dem Kontoauszug in diesem Format: 1234 56xx xxxx 1234.</li>
-<li>Du kannst Transaktionen, die nicht Casumo betreffen, verdecken.</li>
+<li>Casumo’s welcome bonus gives you a total of €1200 extra and 200 free spins, if you use it to its full potential. It works like this:</li>
+<li class="answer h4 markdown" data-bind="markdown: answer">
+<table>
+<thead>
+<tr>
+<th id="deposit">Deposit</th>
+<th id="bonus">Bonus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1:st deposit</td>
+<td>200% bonus (max bonus €50) and 200 free spins (20 per day the following 9 days).</td>
+</tr>
+<tr>
+<td>2:nd deposit</td>
+<td>50% deposit bonus (€150 max bonus).</td>
+</tr>
+<tr>
+<td>3:rd deposit</td>
+<td>50% deposit bonus (€200 max bonus).</td>
+</tr>
+<tr>
+<td>4:th deposit</td>
+<td>25% deposit bonus (€400 max bonus).</td>
+</tr>
+<tr>
+<td>5:th deposit</td>
+<td>25% deposit bonus (€400 max bonus).</td>
+</tr>
+</tbody>
+</table>
+</li>
 </ul>
-
-<p><strong>Nachweis der Bankeinzahlung/des Bankkontos</strong> <br>
-Es ist ein Kontoauszug nötig, der mindestens eine Einzahlung auf dein Casumo-Konto, den Namen des Kontoinhabers und die Kontodaten (IBAN &amp; SWIFT) zeigt.
-Kopien von ausgedruckten oder elektronischen Kopien von Kontoauszügen sind möglich, solange sie die erforderlichen Informationen zeigen.
-Alle elektronischen Kontoauszüge müssen die URL (Internet-Adresse) im Screenshot zeigen.
-Dies gilt auch für Fälle, in denen du nur verifizieren musst, dass du der Kontoinhaber bist.
-Mit der Ausnahme, wenn Einzahlungen auf dein Casumo-Konto angefordert wurden. </p>
-
-<p><strong>Nachweis der E-Wallet-Einzahlung/ des E-Wallet-Kontos</strong> <br>
-Ein Screenshot deiner Kontoübersicht,der deine persönlichen sowie deine Kontodaten zeigt, ist erforderlich.
-Gelegentlich müssen wir auch einen Screenshot deiner Transaktionen anfordern, der mindestens eine Einzahlung auf dein Casumo-Konto zeigt.
-Die URL (Internet-Adresse) sollte im Screenshot sichtbar sein.</p></li>
-                            </ol>
-
-                            <h2 class="theme-color h1"><strong data-bind="html: category_title">Play Okay</strong></h2>
-                            <ol class="faq-list" data-bind="foreach: faqs">
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="wie-kann-ich-mein-spielen-einschranken"><h3><strong data-bind="html: question">Wie kann ich mein Spielen einschränken?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Wenn du dein Spielen einschränken möchten, bieten wir verschiedene Möglichkeiten zur Auswahl. Du kannst Grenzen für Ausgaben, Einzahlungen, Verluste und Wetteinsätze einrichten und diese stehen dir täglich, wöchentlich oder monatlich zur Verfügung. Sobald du dein Limit festlegst, wird es auf deine Aktivität und den Zeitraum abgestimmt. Zum Beispiel: solltest du dich entscheiden, ein wöchentliches Limit an einem Mittwoch zu setzen, wird es um Mitternacht bis Montag zurückgesetzt und dann weiter von Montag bis Sonntag von da an laufen. </p>
-
-<p>Du hast auch die Möglichkeit, den Zugriff auf dein Konto zu sperren. Dies kann entweder über eine Pause von bis zu 6 Monaten oder ein Selbstausschluss für einen Zeitraum von über 6 Monaten erfolgen, wenn du das Gefühl hast, dass du zu viel gespielt hast oder besorgt bist, dass deine Spielgewohnheiten ein Problem werden könnten. </p>
-
-<p>Hier kannst du deine Limits über die <a href="/player/play-okay-settings">Play Okay Einstellungen setzen</a>. Lies mehr über die verschiedenen Einschränkungen und wie sie funktionieren, indem du unsere Play Okay Seite <a href="/play-okay">hier</a> besuchst.</p></li>
-
-                                <li class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)" id="ich-glaube-ich-spiele-zu-viel-wo-bekomme-ich-hilfe"><h3><strong data-bind="html: question">Ich glaube ich spiele zu viel. Wo bekomme ich Hilfe?</strong></h3></li>
-                                <li class="answer h4 markdown" data-bind="markdown: answer"><p>Auf unserer <a href="/play-okay">Play Okay</a> Seite kannst du nachlesen, wie du vorgehst, wenn du oder jemand aus deinem Umkreis professionelle Hilfe mit dem Spielen benötigt.</p></li>
-                            </ol>
-                        <!-- /ko -->
-                    </div>
+</li>
+<li>
+   <a class="question" href="/en/faq/#how-do-i-activate-my-free-spins"><strong data-bind="html: question">How do I activate my free spins?</strong></a><p></p>
+<ul>
+<li>To activate your free spins click your username in the navigation bar top left, and you’ll get to your inventory. Clicking the desired valuable will activate the free spins, and the game will start automatically.</li>
+</ul>
+</li>
+<li>
+   <a class="question" href="/en/faq/#the-worlds-first-casino-adventure-whats-that"><strong data-bind="html: question">The world’s first casino adventure. What’s that?</strong></a><p></p>
+<ul>
+<li>Casumo is more than just a casino. Here you receive valuables and trophies by collecting points that take you to new levels and planets. You get rewarded with everything from free rounds to free cash while you play. The more time and energy you spend on Casumo, the better the rewards.</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_1 et_pb_accordion_item">
 
 
-                    <script
-                    			  src="https://code.jquery.com/jquery-3.3.1.js"
-                    			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-                    			  crossorigin="anonymous"></script>
-                    <!-- lets try to remove jquery. -->
+				<h2 class="et_pb_toggle_title">Customer Support</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul>
+<li id="customer-support">
+   <a class="question" href="/en/faq/#customer-support"><strong>When is the customer support available?</strong></a><p></p>
+<ul>
+<li>Casumo ambassadors are answering all your enquiries every day of the week 24/7. Just send an email to hey@casumo.com and we’ll get back to you as soon as we can.</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_2 et_pb_accordion_item">
 
-                     <link rel="stylesheet" type="text/css" href="search.css">
-                     <script src="search.js"></script>
-                     <script src="fuzzyset.js"></script>
+
+				<h2 class="et_pb_toggle_title">My Account</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="how-do-i-create-an-account-with-casumo" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-do-i-create-an-account-with-casumo"><strong data-bind="html: question">How do I create an account with Casumo?</strong></a><p></p>
+<ul>
+<li class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">Click “sign up” in the left hand menu, pick your welcome gift and follow the two steps . Easy as pie.</li>
+</ul>
+</li>
+<li id="i-can-not-open-an-account-what-is-wrong" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-can-not-open-an-account-what-is-wrong"><strong data-bind="html: question">I can not open an account. What is wrong?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Make sure that all fields are correctly filled in. Is the Casumo name you chose available? Is the same password entered in both fields? If the email address is already registered with Casumo it means you already have an account with us. Click “I forgot my password” or contact us directly and we will reactivate the account for you.</li>
+</ul>
+</li>
+<li id="i-am-under-18-old-can-i-play-at-casumo" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-am-under-18-old-can-i-play-at-casumo"><strong data-bind="html: question">I am under 18 old. Can I play at Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">No you can’t. Gambling whilst under the age of 18 is a criminal offence and Casumo takes a severe responsibility to prevent access for anyone underage. Therefore appropriate age verification checks are carried out.</li>
+</ul>
+</li>
+<li id="i-have-forgot-my-password-how-do-i-get-a-new-one" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-have-forgot-my-password-how-do-i-get-a-new-one"><strong data-bind="html: question">I have forgot my password. How do I get a new one?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Click “login” in the left hand menu, select “I forgot my password” and enter the email address you used when you registered with Casumo. We will send an email with a link that you use to change your password. If you don’t get the email, check your junk mail.</li>
+</ul>
+</li>
+<li id="where-do-i-find-my-personal-stuff" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#where-do-i-find-my-personal-stuff"><strong data-bind="html: question">Where do I find my personal stuff?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Once logged in – click your casumo name in the top left corner to get to your personal stuff. Here you will find everything related to you and your casino adventure – personal information, Details &amp; settings, status in the adventure and all your valuables and trophies.</li>
+</ul>
+</li>
+<li id="can-i-change-my-casumo-name" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#can-i-change-my-casumo-name"><strong data-bind="html: question">Can I change my Casumo name?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">No, you can not change your Casumo name, so choose your name with care and pay extra attention to the spelling. If you don’t want others to see your Casumo name and your activity you can make yourself invisible by setting “Show my adventure and player card” under “Details &amp; settings” to off.</li>
+</ul>
+</li>
+<li id="how-can-i-change-the-details-in-my-account" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-can-i-change-the-details-in-my-account"><strong data-bind="html: question">How can I change the details in my account?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Click your Casumo name in the left hand menu and go to “Details &amp; settings”. Here you can change your email address and password by clicking “change.” If you need to change your address or phone number, please contact us and we will help you with that.</li>
+</ul>
+</li>
+<li id="how-do-i-turn-off-my-subscription-to-newsletters-and-promotions" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-do-i-turn-off-my-subscription-to-newsletters-and-promotions"><strong data-bind="html: question">How do I turn off my subscription to newsletters and promotions?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Click on your Casumo name (upper left corner) and select “Details &amp; settings”. Here you can turn on / off your subscription to newsletters and promotions.</li>
+</ul>
+</li>
+<li id="i-dont-want-others-to-see-my-casumo-name-and-my-activity-what-do-i-do" class="gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-dont-want-others-to-see-my-casumo-name-and-my-activity-what-do-i-do"><strong data-bind="html: question">I don’t want others to see my Casumo name and my activity. What do I do?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">If you don’t want others to see your Casumo name and your activity you can make yourself invisible by setting “Show my adventure and player card” under “Details &amp; settings” to off.</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_3 et_pb_accordion_item">
+
+
+				<h2 class="et_pb_toggle_title">Payments</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="how-do-i-deposit-money-to-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a href="/en/faq/#how-do-i-deposit-money-to-casumo" class="question"><strong data-bind="html: question">How do I deposit money to Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Click on your balance in the left hand menu, select the desired deposit method and follow the instructions. At Casumo you can deposit using Visa, Mastercard, Skrill, Neteller, Paysafe or Bank transfer.</li>
+</ul>
+</li>
+<li id="my-deposit-failed-what-is-wrong" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#my-deposit-failed-what-is-wrong"><strong data-bind="html: question">My deposit failed. What is wrong?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Make sure all the information is filled out correctly. Are all the digits in the account number correct? Are you currently on the withdrawal or deposit page? Are you using one of our accepted cards (currently we do not accept Maestro)? If all the information is correct – reload the page or try a different browser (we recommend Google Chrome). The most common reason for failed deposits can be traced to your bank. Perhaps your Verified by VISA or MasterCard secure code failed? Your card might be affected by limitations or blocks regarding online and/or international payments? Did you check that your card was sufficiently funded? Do you have more than 5 credit cards activated at the same time? Please contact the card department of your bank for more information, and get back to us if the problem persists.</li>
+</ul>
+</li>
+<li id="i-made-a-deposit-but-the-funds-were-not-credited-to-my-casumo-account-what-do-i-do" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-made-a-deposit-but-the-funds-were-not-credited-to-my-casumo-account-what-do-i-do"><strong data-bind="html: question">I made a deposit but the funds were not credited to my Casumo account. What do I do?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">No need to worry. First make sure that the funds were deducted from your card/account and then contact us. Most likely we will be able to trace and solve the problem without any proof of deposit. However in some rare cases we might ask you for a copy of the transaction to be able to investigate it with the payment provider.</li>
+</ul>
+</li>
+<li id="is-there-a-deposit-fee-at-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#is-there-a-deposit-fee-at-casumo"><strong data-bind="html: question">Is there a deposit fee at Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">All deposit methods are free.</li>
+</ul>
+</li>
+<li id="i-have-made-a-deposit-to-casumo-when-is-the-money-available-in-my-account" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-have-made-a-deposit-to-casumo-when-is-the-money-available-in-my-account"><strong data-bind="html: question">I have made a deposit to Casumo. When is the money available in my account?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">All deposits are credited instantly to your Casumo balance except bank transfers (for Sweden and Finland we have instant bank transfers).This chart shows when the money is available in the account for the different methods.<br>
+<table>
+<thead>
+<tr>
+<th id="method">Method</th>
+<th id="transferred">Transferred</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VISA</td>
+<td>instantly</td>
+</tr>
+<tr>
+<td>Mastercard</td>
+<td>instantly</td>
+</tr>
+<tr>
+<td>Skrill</td>
+<td>instantly</td>
+</tr>
+<tr>
+<td>Neteller</td>
+<td>instantly</td>
+</tr>
+<tr>
+<td>Paysafe</td>
+<td>instantly</td>
+</tr>
+<tr>
+<td>All bank deposits</td>
+<td>Up to 3 business days</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_4 et_pb_accordion_item">
+
+
+				<h2 class="et_pb_toggle_title">Withdrawals</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="how-do-i-withdraw-money-from-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-do-i-withdraw-money-from-casumo"><strong data-bind="html: question">How do I withdraw money from Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Click the Euro (€) button in the left hand side menu. Select your preferred withdrawal method and follow the instructions. The minimum withdrawal amount is €10.</li>
+</ul>
+</li>
+<li id="which-withdrawal-methods-can-i-use" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#which-withdrawal-methods-can-i-use"><strong data-bind="html: question">Which withdrawal methods can I use?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Withdrawals should be made using the same method as used for the last deposit. If you deposited using PaySafeCard, you can request your withdrawals to your bank account.</li>
+</ul>
+</li>
+<li id="i-can-not-withdraw-money-what-is-wrong" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-can-not-withdraw-money-what-is-wrong"><strong data-bind="html: question">I can not withdraw money. What is wrong?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Double-check the information provided. Is the amount you are trying to withdraw exceeding your current balance? Have you entered the correct bank account number? Are you currently on the page for deposits or withdrawals? Do you have an active bonus that needs to be wagered before withdrawal (you can still withdraw money but you will lose your bonus money)? If all information is correct – try to reload the page or try a different browser (we recommend Google Chrome). Contact us if this doesn’t solve the problem.</li>
+</ul>
+</li>
+<li id="is-there-a-withdrawal-fee-at-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#is-there-a-withdrawal-fee-at-casumo"><strong data-bind="html: question">Is there a withdrawal fee at Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">No, withdrawals are free of charge at Casumo.</li>
+</ul>
+</li>
+<li id="i-have-made-a-withdrawal-from-casumo-when-will-i-receive-my-money" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-have-made-a-withdrawal-from-casumo-when-will-i-receive-my-money"><strong data-bind="html: question">I have made a withdrawal from Casumo. When will I receive my money?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">When you request a withdrawal the amount gets reserved and will not be available in your Casumo balance. The chart below shows how long it takes before the funds are available on your bank account/e-wallet after approval.<br>
+<table>
+<thead>
+<tr>
+<th id="method">Method</th>
+<th id="available">Available</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VISA</td>
+<td>1-5 business days after approval</td>
+</tr>
+<tr>
+<td>Skrill</td>
+<td>instantly after approval</td>
+</tr>
+<tr>
+<td>Neteller</td>
+<td>instantly after approval</td>
+</tr>
+<tr>
+<td>All banks</td>
+<td>1-5 business days after approval</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_5 et_pb_accordion_item">
+
+
+				<h2 class="et_pb_toggle_title">Bonus and Free Spins</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="what-is-a-bonus" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-is-a-bonus"><strong data-bind="html: question">What is a bonus?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">A bonus at Casumo can mean free spins, extra money to play for directly or extra money you receive after making a deposit. The type of bonus and the size of it varies and you need to wager the bonus money in order to withdraw the funds. If you, for example, receive a 50% deposit bonus, we will add 50% more money on top of your deposit amount. In this case, you’ll get €50 extra from us if you deposit €100 to your Casumo account.</li>
+</ul>
+</li>
+<li id="when-do-i-get-bonuses-at-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#when-do-i-get-bonuses-at-casumo"><strong data-bind="html: question">When do I get bonuses at Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">At Casumo you can get a bonus in many different ways. Besides the welcome bonus you receive upon joining and weekly new bonus promotions, you can get lots of bonuses simply by playing games and climbing in levels. Sometimes you get a bonus when you level up, and sometimes you have a bunch of free spins waiting for you when you log in. Make sure you are subscribing to our offers and news through email and sms to not miss out.</li>
+</ul>
+</li>
+<li id="what-welcome-bonus-do-i-get-at-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-welcome-bonus-do-i-get-at-casumo"><strong data-bind="html: question">What welcome bonus do I get at Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Casumo’s welcome bonus gives you a total of €1200 extra and 200 free spins, if you use it to its full potential. It works like this:<br>
+<table>
+<thead>
+<tr>
+<th id="deposit">Deposit</th>
+<th id="bonus">Bonus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1:st deposit</td>
+<td>200% bonus (max bonus €50) and 200 free spins (20 per day the following 9 days).</td>
+</tr>
+<tr>
+<td>2:nd deposit</td>
+<td>50% deposit bonus (€150 max bonus).</td>
+</tr>
+<tr>
+<td>3:rd deposit</td>
+<td>50% deposit bonus (€200 max bonus).</td>
+</tr>
+<tr>
+<td>4:th deposit</td>
+<td>25% deposit bonus (€400 max bonus).</td>
+</tr>
+<tr>
+<td>5:th deposit</td>
+<td>25% deposit bonus (€400 max bonus).</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li id="how-do-i-get-my-welcome-bonus" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-do-i-get-my-welcome-bonus"><strong data-bind="html: question">How do I get my welcome bonus?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Start by creating an account at Casumo. Once logged in, a lovely valuable is waiting in your account inventory. Click on your username in the left hand menu to get there. To activate the valuable you just click on it. As simple as that. Please note that you need to activate the valuable in order to receive the bonus and free spins on this deposit. Once your payment is made, the bonus will automatically appear in your account and you will receive a new valuable for the next deposit along with your 200 free spins.</li>
+</ul>
+</li>
+<li id="what-are-free-spins" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-are-free-spins"><strong data-bind="html: question">What are free spins?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Free spins (or free rounds) means you get to play for free on a game in the casino a number of rounds – of course with the same chance of winning as when you play for your own money. Winnings on free rounds are converted to bonus money with a wagering requirement of 30 times the bonus amount.</li>
+</ul>
+</li>
+<li id="how-do-i-activate-my-free-spins" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-do-i-activate-my-free-spins"><strong data-bind="html: question">How do I activate my free spins?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">To activate your free spins – go to your personal stuff and click the valuable. By clicking on the valuable you activate the free spins and the game will start automatically.</li>
+</ul>
+</li>
+<li id="what-are-the-wagering-requirement-for-my-bonus" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-are-the-wagering-requirement-for-my-bonus"><strong data-bind="html: question">What are the wagering requirement for my bonus?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Before you can withdraw your bonus money they need to be wagered. All bonuses must be wagered 30 times (deposit + bonus) and free spins winnings 30 times. You can make a withdrawal before you have fulfilled the wagering requirement, but then you will lose your bonus money.</li>
+</ul>
+</li>
+<li id="do-all-games-count-towards-the-wagering-requirements" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#do-all-games-count-towards-the-wagering-requirements"><strong data-bind="html: question">Do all games count towards the wagering requirements?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Most games count towards the wagering requirements, but not all. Wagering of bonus funds on 1429 Uncharted Seas, Blood Suckers, Dead or Alive, Jack Hammer 2, Kings of Chicago, Super Monopoly Money, Pearls of India, Scrooge, Beautiful Bones, Tower Quest and Simsalabim will not contribute towards the playthrough requirement. Here is a list of how much each game contributes to the wagering requirements:<br>
+<table>
+<thead>
+<tr>
+<th id="game">Game</th>
+<th id="wagers">Wagers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Slots</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Video Poker</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Casino Hold’em</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Oasis Poker</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>TXS Hold’em poker</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>Ultimate Texas Hold’em</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Roulette (all varieties)</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Baccarat (all varieties)</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Punto Banco</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Blackjack (incl Pontoon and Double Exposure)</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>All other games</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+<li id="how-does-the-bonus-turnover-work-at-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-does-the-bonus-turnover-work-at-casumo"><strong data-bind="html: question">How does the bonus turnover work at Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">If you have bonus money in your account, they will play proportionately to your real money. If you have €10 in bonus cash and €10 in real money and bet €2, €1 will be bonus money and €1 real money. Winnings are distributed proportionately in the same way. If you get several bonuses at the same time the bonus money and the wagering requirements are bundled.</li>
+</ul>
+</li>
+<li id="where-can-i-see-how-much-i-have-left-to-wager-of-my-bonus" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#where-can-i-see-how-much-i-have-left-to-wager-of-my-bonus"><strong data-bind="html: question">Where can I see how much I have left to wager of my bonus?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">On the withdrawal page, you will see if you have bonus money left to wager and informed that they will disappear if you choose to make a withdrawal. We let you know how much of your balance that is bonus money and how much you have left to wager before you can withdraw the bonus money.</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_6 et_pb_accordion_item">
+
+
+				<h2 class="et_pb_toggle_title">Technical Questions</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="games-are-slow-whats-wrong" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#games-are-slow-whats-wrong"><strong data-bind="html: question">Games are slow. What’s wrong?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Make sure you have the latest version of your browser installed (we recommend Google Chrome) and the latest version of Flash. Also make sure that it’s not your internet connection that is the problem (try to play with the network cable if the wireless connection is not working like it should) and close any background programs that might drain your bandwidth.</li>
+</ul>
+</li>
+<li id="what-happens-if-the-game-freezes-in-the-middle-of-a-round" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-happens-if-the-game-freezes-in-the-middle-of-a-round"><strong data-bind="html: question">What happens if the game freezes in the middle of a round?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">If your game freezes, you will end up exactly where you left off next time you open the game. If there is no option for you to do so, the round will be completed on the server even if your computer is frozen or your internet connection stopped working. Any winnings are paid out to your account as usual.</li>
+</ul>
+</li>
+<li id="i-cannot-open-the-game-what-is-wrong" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-cannot-open-the-game-what-is-wrong"><strong data-bind="html: question">I cannot open the game. What is wrong?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">This may mean that you have lost contact with the server. Try to log out and log back in and try again. Sometimes you may need to shut down the browser and start over from scratch for the game to load. Contact our ambassadors if problem still persists.</li>
+</ul>
+</li>
+<li id="how-do-i-take-a-screenshot" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-do-i-take-a-screenshot"><strong data-bind="html: question">How do I take a screenshot?</strong></a><p></p>
+<ul>
+<li data-bind="attr.id: $parents[1].getQuestionPermalink(question)">Taking a screenshot means taking a photo of what is currently visible on the computer screen (as if you were taking a picture of the computer screen with your camera). The image is saved as a file on your computer and can easily be attached to an email and sent to us.<strong>This is how you take a screenshot in Windows:</strong>
+<ul>
+<li><strong>Step 1:</strong>&nbsp;Make sure that the current view on the screen is what you want to take a screenshot of.</li>
+<li><strong>Step 2:</strong>&nbsp;Press “Print Screen” on the keyboard (this button is usually on the right hand side of the keyboard).</li>
+<li><strong>Step 3:</strong>&nbsp;Open the program “Paint” or “Word” on your computer, and then use short command Ctrl + V (or choose Paste from the Edit menu). An image will be pasted ( this is the image that the computer saved when you clicked the “Print Screen” key).</li>
+<li><strong>Step 4:</strong>&nbsp;Save the file on your computer. We recommend that you save it on your desktop so you can easily find the file.</li>
+<li><strong>Step 5:</strong>&nbsp;Attach the file to an email and send it to us.</li>
+</ul>
+<p>   <strong>Instructions for Mac:</strong></p>
+<ul>
+<li><strong>Step1:</strong>&nbsp;Make sure that the view you want to take a screenshot of is the one showing on the screen.</li>
+<li><strong>Step 2:</strong>&nbsp;Press Shift + CMD +4, then press the space bar and a camera will appear. Click with the mouse to take a snapshot of the current window. The image is saved on the computer desktop with the current time and date.</li>
+<li><strong>Step 3:</strong>&nbsp;Attach the file to an email and send it to us.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_7 et_pb_accordion_item">
+
+
+				<h2 class="et_pb_toggle_title">The Casumo Adventure</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="the-worlds-first-casino-adventure-whats-that" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#the-worlds-first-casino-adventure-whats-that"><strong data-bind="html: question">The world’s first casino adventure. What’s that?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Casumo is more than just a casino. Here you receive valuables and trophies by collecting points that take you to new levels and planets. You get rewarded with everything from free rounds to free cash while you play. The more time and energy you spend on Casumo, the better the rewards.</li>
+</ul>
+</li>
+<li id="how-does-the-progress-bar-work" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-does-the-progress-bar-work"><strong data-bind="html: question">How does the progress bar work?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Every time you play at Casumo you collect points that will take you to new levels in the adventure. The progress bar on landing page will display how far you are, and for each new level you achieve your chances to win great valuables (such as free spins and free money) increases.</li>
+</ul>
+</li>
+<li id="what-happens-when-i-reach-a-new-level" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-happens-when-i-reach-a-new-level"><strong data-bind="html: question">What happens when I reach a new level?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">When you create an account at Casumo a cute little casumo guy with a rope around its waist is born. The rope symbolizes the beginners’ level – the level that all newly hatched casumos begin their adventure at. At each new level you have the chance to win valuables, such as free cash and free spins. Your chances to win better valuables increases with each new level and if you continue to play a whole new planet with new levels will open up eventually.</li>
+</ul>
+</li>
+<li id="i-just-leveled-up-but-did-not-receive-any-rewards-why-is-that" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-just-leveled-up-but-did-not-receive-any-rewards-why-is-that"><strong data-bind="html: question">I just leveled up but did not receive any rewards. Why is that?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Sometimes you get some kind of reward when you level up, but not always. The reward system depends on many factors. All the points you collect are saved and transferred to the next level, and if you did not get a reward this time, the chance that you’re getting one next time is bigger.</li>
+</ul>
+</li>
+<li id="what-are-belts-and-how-do-they-work" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-are-belts-and-how-do-they-work"><strong data-bind="html: question">What are belts and how do they work?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Our belts represents what skill level you and your casumo have achieved. The better belt you have the bigger is the chance to find nice valuables at each new level. You start by trying to get the white belt, followed by yellow, red, blue, purple and black</li>
+</ul>
+</li>
+<li id="what-are-trophies" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-are-trophies"><strong data-bind="html: question">What are trophies?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">All Casumos get their own adventure page where they store various valuables and trophies. Trophies are earned by performing various tasks and is a proof of hard work. You can choose if you want to showcase your trophies to other Casumos or if you rather stay a bit anonymous (depends on how braggy and competitive you are).</li>
+</ul>
+</li>
+<li id="what-are-valuables" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-are-valuables"><strong data-bind="html: question">What are valuables?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">A valuable is a kind of reward (such as free spins, deposit bonuses or free cash) and you find them under “valuables” in your account. Hover with the mouse over the valuable and it tells you what you get if you use it. To use the valuable, simply click on it. As soon as the valuable is activated, it disappears from your account automatically.</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_8 et_pb_accordion_item">
+
+
+				<h2 class="et_pb_toggle_title">Tournaments</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="what-are-reel-races" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-are-reel-races"><strong data-bind="html: question">What are Reel Races?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">The Reel Races can be described as a fast paced ‘casino tournament’ where the goal is to win as many times as possible within a certain duration of time. The more you win, the more points you get, and the player who ends up with the most points when the time runs out wins.</li>
+</ul>
+</li>
+<li id="is-it-free-to-opt-in" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#is-it-free-to-opt-in"><strong data-bind="html: question">Is it free to opt in?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">As free as a fly.</li>
+</ul>
+</li>
+<li id="how-do-i-collect-points-in-reel-races" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-do-i-collect-points-in-reel-races"><strong data-bind="html: question">How do I collect points in Reel Races?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">A standard win will give you 2 points and a Big Win will give you 20 points. To make things super duper exciting, we have also added 3 types of tournament boosters: 3 wins in a row gives you 5 points, a total of 2 big wins gives you 35 points and a Mega Win gives you 100 points.</li>
+</ul>
+</li>
+<li id="how-many-reel-races-can-i-participate-in-per-day" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-many-reel-races-can-i-participate-in-per-day"><strong data-bind="html: question">How many Reel Races can I participate in per day?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">You can join the Reel Races as many times as you wish.</li>
+</ul>
+</li>
+<li id="how-is-the-position-defined-in-case-players-have-equal-amount-of-points" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-is-the-position-defined-in-case-players-have-equal-amount-of-points"><strong data-bind="html: question">How is the position defined in case players have equal amount of points?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">The player who has collected the amount first will be ranked first out of the players with equal points.</li>
+</ul>
+</li>
+<li id="what-is-a-casumo-open-reel-race" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#what-is-a-casumo-open-reel-race"><strong data-bind="html: question">What is a Casumo Open Reel Race?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Casumo Open Reel Races are special Reel Races without a specified game. This allows you to choose any game to compete in the Reel Races against other players. There are a number of Casumo Open Reel Race events throughout the day.</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_9 et_pb_accordion_item">
+
+
+				<h2 class="et_pb_toggle_title">Licenses and Security</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="is-my-money-safe-with-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#is-my-money-safe-with-casumo"><strong data-bind="html: question">Is my money safe with Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">The Gaming Authority regularly verifies and ensures that we cover all the players’ account balances. All connections with Casumo.com and all information is sent over secure connections using SSL. This means that the information is encrypted so it can not be read by someone other than the person it is intended for. Our payment methods are PCI compliant and conforms to PCI. This means that your card details are safely handled and that we meet the highest security standards for payments, withdrawals and deposits.</li>
+</ul>
+</li>
+<li id="where-do-casumo-have-their-gaming-license" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#where-do-casumo-have-their-gaming-license"><strong data-bind="html: question">Where do Casumo have their gaming license?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">We have our gaming licenses in Malta and UK, which are two of the most serious forms of licensed games in the world. These licenses ensure that we comply with laws and regulations, ensuring that you, as a player, can feel confident that nothing strange happens to your data, your safety or your money.</li>
+</ul>
+</li>
+<li id="how-can-i-be-sure-that-the-games-are-fair-and-random" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-can-i-be-sure-that-the-games-are-fair-and-random"><strong data-bind="html: question">How can I be sure that the games are fair and random?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">All our games use a random number generator that is certified by an independent third party. The same random number generator is used for both free games and real money games.</li>
+</ul>
+</li>
+<li id="do-i-pay-taxes-on-winnings-from-casumo" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#do-i-pay-taxes-on-winnings-from-casumo"><strong data-bind="html: question">Do I pay taxes on winnings from Casumo?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Casumo has a European gaming license issued by the Gaming Authority in Malta, where we also have our headquarters and support. Having a gaming license within the EU means that all your winnings are tax free when you play from within the EU. It is however your responsibility to know if you should pay tax or not.</li>
+</ul>
+</li>
+<li id="why-do-i-need-to-verify-my-account" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#why-do-i-need-to-verify-my-account"><strong data-bind="html: question">Why do I need to verify my account?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">All online gambling operators such as Casumo follow anti money laundering regulations from several governing bodies. In addition, we are also committed to host a secure and safe gambling environment where player integrity and protection of your funds is always a priority. Security checks, commonly known as KYC (Know Your Customer) are performed on a regular basis. They are most common whilst requesting a withdrawal, however, they can also be in relation to deposits or as random sample checks. You only need to verify your account once, however, there is a chance we ask for additional documentation in the future based on your account history.</li>
+</ul>
+</li>
+<li id="how-do-i-verify-my-account" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-do-i-verify-my-account"><strong data-bind="html: question">How do I verify my account?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">It couldn’t be easier. Just upload files of the requested documents and let us do the rest. The account verification tab will become visible in your Casumo account when we have sent you a verification request. Once your documents have been approved, they are safely archived on secure servers. The type of documents we ask for depends on your deposit and withdraw method and if you reach certain thresholds. We’ll let you know when something is needed, and the verification is usually done within a couple of hours. Make sure your uploads are of good quality so that we can read the relevant details and approve them. We accept most file formats, but the size limit is 8MB. Here’s a short summary of the most common documents needed and what to keep in mind whilst prepping them.<strong>Verify identity</strong><br>
+   A copy of your passport, national identity card or driving license to verify your age and identity. In addition we accept several national types of alternative identity cards for certain countries. During the verification process you will see which kind of identity document we accept for your country. Other things to keep in mind:<p></p>
+<ul>
+<li>The expiration date must be valid.</li>
+<li>Must be a personal identification document.</li>
+<li>All four corners of the document must be visible.</li>
+<li>Copy of both front and back is required.</li>
+<li>Must be a government issued or approved photo document.</li>
+<li>Don’t cover or alter any details.</li>
+</ul>
+<p>   <strong>Verify address</strong><br>
+   An invoice or an electronic bill with your adress on it normally does the trick. We also accept most types of government documents or bank statements as proof of address. The document should be in your name, match the address on your Casumo account and be issued within the last six months. Other things to keep in mind:</p>
+<ul>
+<li>The whole invoice must be visible.</li>
+<li>Screenshots of bank statements/electronic bills must include the URL (website address).</li>
+<li>Don’t cover or alter any details.</li>
+</ul>
+<p>   <strong>Verify Deposit (bank transfer)</strong><br>
+   A bank statement showing at least one deposit to your Casumo account, account holder’s name and bank details (IBAN and SWIFT if possible) is enough. Both paper copies and electronic versions of your bank statement works, as long as it shows the information we need. All electronic bank statements must include the URL (website address) in the screenshot. The above also applies in those cases where we only need to verify that you are the account holder of the bank account. In those cases the statement also needs to show any deposits made to your Casumo account.</p>
+<p>   <strong>Verify deposit (VISA &amp; MasterCard)</strong><br>
+   This is usually asked for when we cannot process withdrawals directly back to your card for some reason. It can be due to restrictions in your country or the card type simply doesn’t support it. A bank statement showing at least one deposit to your Casumo account with the card in question, account holder’s name and bank details (IBAN and SWIFT if possible) will ensure that we have the link between your card and bank account. This is important as the origin and the destination of the funds should be the same if possible. Other things to keep in mind:</p>
+<ul>
+<li>Screenshots of bank statements must include the URL (website address).</li>
+<li>If visible on the bank statement, cover the card number n this format: 1234 56xx xxxx 1234.</li>
+<li>You can cover transactions that doesn’t concern Casumo.</li>
+</ul>
+<p>   <strong>Verify E-wallet</strong><br>
+   A screenshot of your account overview showing your personal details and account details is enough. We might also request a screenshot of the transactions overview that shows at least one of your deposits to Casumo. The URL (website address) should be visible in the screenshot.</p></li>
+</ul>
+</li>
+<li id="why-cant-i-access-all-games" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#why-cant-i-access-all-games"><strong data-bind="html: question">Why can’t I access all games?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">Our different game providers operate under different jurisdictions hence some games might be restricted in your country. The below restrictions are currently in place:<br>
+<table>
+<thead>
+<tr>
+<th id="game_provider">Game Provider</th>
+<th id="countries">Countries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Play ‘n Go</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>Microgaming</td>
+<td>USA, France, Italy, Spain, Denmark, South Africa, Singapore</td>
+</tr>
+<tr>
+<td>Greentube</td>
+<td>United States, Canada, France, Germany, Austria, Switzerland, Italy, Denmark, Hungary, Poland, Romania, Latvia, Turkey</td>
+</tr>
+<tr>
+<td>Thunderkick</td>
+<td>United States, France, Iraq, Iran, Libya, Myanmar, Nigeria, North Korea, Spain, Sudan, Zimbabwe, Denmark, Portugal, Italy</td>
+</tr>
+<tr>
+<td>Quickspin</td>
+<td>American Samoa, Cuba, Denmark, France, French Guyana, Hong Kong, India, Iraq, Iran, North Korea, South Korea, Libya, Myanmar, Macau, Northern Mariana Islands, Nigeria, French Polynesia, Sudan, French Southern Territories, United States, U.S. Virgin Islands, Zimbabwe</td>
+</tr>
+<tr>
+<td>Net Entertainment</td>
+<td>North Korea, Iran, Algeria, Ecuador, Hong Kong, Indonesia, Myanmar, Afghanistan, Albania, Angola, Cambodia, Guyana, Iraq, Israel, Kuwait, Laos, Namibia, Nicaragua, Pakistan, Panama, Papua New Guinea, Philippines, Taiwan, Sudan, Syria, Uganda, Yemen, Zimbabwe, Belgium, Canada, Denmark, Italy, France, Spain, United States, Singapore</td>
+</tr>
+<tr>
+<td>Scientific Games (Bally, Barcrest, Williams, ShuffleMaster)</td>
+<td>Afghanistan, Albania, Algeria, American Samoa, Andorra, Angola, Antigua &amp; Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Belarus, Belgium,Belize, Bolivia, Bosnia And Herzegovina, Botswana, Brazil, Bulgaria, Burundi, Cambodia, Canada, China, Chile, Christmas Island, Colombia, Comoros, Cook Islands, Costa Rica, Croatia, D.R. Congo, Cuba, Curaçao, Cyprus, Czech Republic, Denmark, Dominica, Dominican RepublicEcuador, Egypt, El Salvador, Estonia, Ethiopia, Fiji, France, French Polynesia, French Southern Territories, Georgia, Germany, Ghana, Gibraltar, Greece, Grenada, Guam, Guatemala, Guernsey (Alderney), Republic of Guinea, Guinea-Bissau, Haiti, Hong Kong, Hungary, Iceland, India, Indonesia, Iran, Iraq, Isle Of Man, Italy, Israel, Jamaica, Japan, Jersey, Jordan, Kazakhstan, Kenya, Kuwait, Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Lithuania, Luxembourg, Macau, Macedonia, Malawi, Malaysia, Mali, Mauritius, Mexiko, Moldova, Monaco, Mongolia, Montenegro, Morocco, Mozambique, Myanmar, Namibia, Nauru, Nicaragua, Niger, Nigeria, Niue, Northern Mariana Islands, North Korea, Norway, Oman, Pakistan, Palestine, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Qatar, Romania, Russia, Rwanda, Saint Kitts And Nevis, San Marino, Saudi Arabia, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Somalia, South Africa, Spain, South Korea, South Sudan, Sudan, Suriname, Swaziland, Switzerland, Syria, Taiwan, Tajikistan, Tanzania, Thailand, Timor-Leste, Trinidad &amp; Tobago, Tunisia, Turkey, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United States, United States Minor Outlying Islands, Uruguay, Uzbekistan, Venezuela, Vanuatu, Vietnam, British Virgin Islands, Virgin Islands, U.S.,Yemen, Zambia, Zimbabwe, Åland</td>
+</tr>
+<tr>
+<td>IGT</td>
+<td>Argentina, Australia, Belgium, Canada, China, Cook Islands, Ivory Coast, Cuba, Northern Cyprus, Denmark, France, Miquelon, Greece, Germany, Hong Kong, Iran, Iraq, Israel, Italy, South Korea, North Korea, Laos, Libya, Macau, Mexico, Monaco, Myanmar, Nauru, Netherlands, Nigeria, Norway, Poland, Portugal, Romania, Russia, Singapore, Somalia, South Africa, Spain, Sudan, Syria, Taiwan, Thailand, Turkey, United States, Uzbekistan, Zimbabwe, Finland</td>
+</tr>
+<tr>
+<td>NextGen &amp; Elk Studios</td>
+<td>USA, Canada, Australia, Iran, North Korea, Cuba, Sudan, Syria</td>
+</tr>
+<tr>
+<td>Evolution</td>
+<td>Burma (Myanmar), China, Cuba, Cyprus, Iran, Israel, Latvia, Turkey, Russian Federation, Sudan, Syria, USA</td>
+</tr>
+<tr>
+<td>Merkur &amp; Blueprint</td>
+<td>Afghanistan, Albania, Algeria, American Samoa, American Virginislands, Angola, Argentina, Armenia, Aruba, Australia, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Bolivia, Bonaire, Sint Eustatius and Saba, Brunei, Burundi, Côte d’Ivoire (Ivory Coast), Cambodia, Canada, Cayman Islands, China, Christmas Island, Cocos (Keeling) Island, Columbia, Congo, Congo (Republic of the), Cook Islands, Cuba, Curacao, Denmark, Dominika, Ecuador, Egypt, Eritrea, Ethiopia, Fiji, France, French Guyana, French Polynesia, French Southern Territories, Ghana, Grenada, Guadeloupe, Guam, Guatemala, Guinea, Haiti, Heard and Mcdonald Island, Holy See (Vatican City State), Honduras, Hong Kong, Indonesia, Iran, Iraq, Israel, Italy, Japan, Jemen, Jordan, Kenya, Kirgisistan, Korea North, Korea South, Kuwait, Laos, Libanon, Liberia, Libya, Macao, Malawi, Marshall Islands, Martinique, Mayotte, Micronesia, Mongolia, Morocco, Mosambik, Myanmar, Northern Mariana Islands, Namibia, Nauru, Nepal, Netherlands Antilles, New Caledonia, Nicaragua, Niger, Nigeria, Niue, Nordfolkislands, Pakistan, Palestina, Papua-Neuguinea, Paraguay, Philippines, Puerto Rico, Qatar, Réunion, Ruanda, São Tomé and Príncipe, South Sudan, Saint Martin, Saint-Pierre and Miquelon, Sambia, Saudi-Arabia, Sierra Leone, Sint Maarten, Somalia, Spain, Sri Lanka, St. Bartholomäus, St. Kitts und Nevis, St. Vincent and the Grenadines, Sudan, Suriname, Syria, Taiwan, Tajikistan, Tansania, Thailand, Timor-Leste, Trinidad and Tobago, Tunisia, Turkey, Turkmenistan, Uganda, United States Minor Outlying Islands, USA, Usbekistan, Venezuela, Vietnam, Wallis and Futuna, Zimbabwe</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle --><div class="et_pb_module et_pb_toggle et_pb_toggle_close  et_pb_accordion_item_10 et_pb_accordion_item">
+
+
+				<h2 class="et_pb_toggle_title">Play Okay</h2>
+				<div class="et_pb_toggle_content clearfix">
+					<ul class="faq-list" data-bind="foreach: faqs">
+<li id="how-can-i-limit-my-gambling" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#how-can-i-limit-my-gambling"><strong data-bind="html: question">How can I limit my gambling?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">If you want to limit your play we offer you several different options to choose from. You can set up limits for spending, deposits, losses and wagering and they are available to you on a daily, weekly or monthly basis. When setting your limit it will start taking into account your activity from the time you set it. For example, should you decide to set a weekly limit on Wednesday, it will reset midnight to Monday and then continue to run from Monday to Sunday from there on.You also have the option to suspend access to your account. This can be done either via a break for up to 6 months, or a self-exclusion for a minimum period of 6 months if you feel you have been playing too much or are concerned that your gambling habits might be becoming a problem.Read more about the different limitations available and how they work by visiting our Play Okay page <a href="/en-gb/play-okay/">here</a>.</li>
+</ul>
+</li>
+<li id="i-am-afraid-i-play-too-much-where-can-i-get-help" class="question gutter-bottom-small" data-bind="attr.id: $parents[1].getQuestionPermalink(question)">
+   <a class="question" href="/en/faq/#i-am-afraid-i-play-too-much-where-can-i-get-help"><strong data-bind="html: question">I am afraid I play too much. Where can I get help?</strong></a><p></p>
+<ul>
+<li class="answer h4 markdown" data-bind="markdown: answer">At our <a href="/en/play-okay/">Play Okay</a> page you can read about how to proceed if you or someone around you need professional help with their gambling.</li>
+</ul>
+</li>
+</ul>
+				</div> <!-- .et_pb_toggle_content -->
+			</div> <!-- .et_pb_toggle -->
+</div>
+
+<link rel="stylesheet" type="text/css" href="search.css">
+<script src="elasticlunr.js"></script>
+<script src="fuzzyset.js"></script>
+<script src="search.js"></script>
