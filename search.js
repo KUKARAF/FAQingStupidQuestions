@@ -10,7 +10,7 @@ var index = elasticlunr(function () {
 //Fuzzy set data
 
 dataSet = document.getElementById('comboBoxData').textContent.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").split(' ');
-function findCloseWords(q, t=0.7, tlc=true) {
+function findCloseWords(q, t=0.7, tlc=true) {// t to be adjusted
 fs = FuzzySet(dataSet);
 r= fs.get(q);
 res = []
@@ -21,30 +21,6 @@ r.forEach(function(element) {
 });
 return res
 }
-
-
-//indexing of FAQ
-/*
-var doc1 = {
-    "id": 1,
-    "title": "Oracle released its latest database Oracle 12g",
-    "body": "Yesterday Oracle has released its new database Oracle 12g, this would make more money for this company and lead to a nice profit report of annual year."
-}
-
-var doc2 = {
-    "id": 2,
-    "title": "Oracle released its profit report of 2015",
-    "body": "As expected, Oracle released its profit report of 2015, during the good sales of database and hardware, Oracle's profit of 2015 reached 12.5 Billion."
-}
-
-
-index.addDoc(doc1);
-index.addDoc(doc2);
-*/
-
-//console.log(index.search("Oracle database profit"));
-
-
 
 
 
@@ -68,10 +44,9 @@ function repeat(fn, times) {  //repeats a function x times, cause im lazy
   for(var i = 0; ac > i; i++){ //for Item in faq-list
     subLisAll = allFaq[i].childNodes;
     sC = subLisAll.length
-    for(var is = 0;sC>is; is++){ // for li in faq list
+    for(var is = 0;sC>is; is++){ // for li in Item in faq-list
       if(subLisAll[is].tagName == 'LI'){
-        docnum = 'ID'+ i.toString() +'--'+ is.toString()
-         //body
+        docnum = 'ID'+ i.toString() +'--'+ is.toString() //created unice identifier
         var doc = {
             "id": docnum,
             "title": subLisAll[is].getElementsByTagName('a')[0].innerText,
@@ -93,13 +68,6 @@ function isIterable(obj) { // true falls if iterable
   }
   return typeof obj[Symbol.iterator] === 'function';
 }
-
-
-
-
-
-
-
 function addTextAreaCallback(textArea, callback, delay) {
     var timer = null;
     textArea.onkeypress = function() {
@@ -115,6 +83,8 @@ function addTextAreaCallback(textArea, callback, delay) {
 }//not used yet might be usefull if search function is too memory intensive
 
 
+
+document.getElementById('comboBoxData').style.visibility = 'hidden' 
 
 
 document.getElementById("comboBox").addEventListener("keydown", function() {
